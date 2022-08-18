@@ -1,135 +1,149 @@
-
-
+/*The universal selector effects all html elements on the page*/
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    box-sizing: border-box; /*Gives the page borders*/
+    padding: 0; /*Sets the padding for the page*/
+    margin: 0; /*sets the margin for the page*/
 }
 
+/*element selector that effects the style of the entire <body> of the page in html*/
 body {
-    background-color: #d9dcd6;
+    background-color: #d9dcd6; /*background color of the webpage*/
 }
 
+/*element selector that effects all <header> properties in that section in html*/
 header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    padding: 20px; /*sets thickness in the area*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*sets the font type within the element*/
+    background-color: #2a607c; /*blue background in the top navigation area*/
+    color: #ffffff; /*color of header h1*/
 }
 
-header h1 {
-    display: inline-block;
-    font-size: 48px;
+header h1 { /*Element element selector that styles <h1> within the <header> element*/
+    display: inline-block; /*displays h1 horizontally*/ 
+    font-size: 48px; /*sets size of h1*/
 }
 
-header h1 .seo {
+header h1 .seo { /* element class selector that styles the 'seo' in Hori'seo'n.*/
     color: #dc5246;
+    /*The color is bolder to create a deeper contrast compared to the rest of the letters and background to meet Accessibility standards*/
 }
 
-header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+header nav { /*Element element selector that styles the <nav> elements in <header> which is the navigation bar on the right*/
+    padding-top: 15px; /*sets padding to the top of the navigation*/
+    margin-right: 20px; /*sets margin to the right of the navigation*/
+    float: right; /*pushes the navigation bar to the right*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*Fonts in the header*/
+    font-size: 20px; /*Size of the font within <nav>*/
 }
 
-header nav ul {
-    list-style-type: none;
+header nav ul { /*styles the <ul> tag in the <nav> elements within <header>*/
+    list-style-type: none; /*sets no style to the list*/
 }
 
 
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+header nav ul li { /*styles the <li> tag which are the navigation headers and links at the top of the page*/
+    display: inline-block; /*Sets the headers side by side instead of a list*/
+    margin-left: 25px; /*spaces the headings apart*/
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
+a { /*element selector for the text of the navigation links in the header*/
+    color: #ffffff; /*makes text white*/
+    text-decoration: none; /*Ensures there's no further styling to the text*/
 }
 
-.hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+figure { /*Element selector that styles the <figure> element in html. Changed from .hero class attribute to better follow the semantic structure of the html*/
+    height: 800px; /*height of content area*/
+    width: 100%; /*width of content area*/
+    margin-bottom: 25px; /*sets margin value for the bottom of the content area*/
+    background-image: url("../images/digital-marketing-meeting.jpg"); /*link to the background image*/
+    background-size: cover; /*sets size to fully cover the area*/
+    background-position: center; /*centers the image*/
 }
 
-main {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+main { /*element selector that styles <main> element in html. Changed from .content class attribute to better follow the structure of the html*/ 
+    width: 75%; /*width of the content area*/
+    display: inline-block; /*keeps position on page so */
+    margin-left: 20px; /*sets value to left margin*/
 }
 
-.digital-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+/*Class selector that styles all elements labeled with the class attribute in html. */
+.digital-marketing {  /*changed from .search-engine-optimization, .online-reputation-management, .social-media-marketing for better consolidation */
+    margin-bottom: 20px; /*sets value for bottom margin*/
+    padding: 50px; /*adds padding all around the selected elements*/
+    height: 300px; /*sets value to the height of the content area*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*sets font style*/
+    background-color: #0072bb; /*sets background color blue*/
+    color: #ffffff; /*sets text color white*/
 }
 
+/*class selector that styles selected images within the parent class selector*/
 .digital-marketing img {
-    max-height: 200px;
+    max-height: 200px;  /*sets height of the image*/
 }
 
+/*Class selector that puts the selected image to the left*/
 .float-left {
-    float: left;
-    margin-right: 25px;
+    float: left; /*sets box to float to the left*/
+    margin-right: 25px;  /*adds thickness to the right margin*/
 }
 
+/*Class selector that puts the selected image to the right*/
 .float-right {
-    float: right;
-    margin-left: 25px;
+    float: right; /*sets box to float to the right*/
+    margin-left: 25px; /*adds thickness to the left margin*/
 }
 
+/*class selector that styles the selected <h2> tags within the parent class selector*/
 .digital-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+    margin-bottom: 20px; /*adds thickness to the bottom margin*/
+    font-size: 36px; /*sets size of the font*/
 }
 
+/*element selectors that style the paragraph <p>*/
 p {
-    font-size: 16px;
+    font-size: 16px; /*size of the paragraph text*/
 }
 
+/*element selectors that styles the <article> element*/
 article {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    margin-right: 20px; /*adds thickness to the right margin*/
+    padding: 20px; /*adds padding all around the selected elements*/
+    clear: both; /*neither side of the footer can have a floating element*/
+    float: right; /*sets box to float to the right*/
+    width: 20%; /*width of the content area*/
+    height: 100%; /*height of the content area*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*sets font types*/
+    background-color: #2589bd; /*makes background color blue*/
 }
 
+/*Class selector that styles all elements labeled with the class attribute in html.*/
 .benefits {
-    margin-bottom: 32px;
-    color: #ffffff;
+    margin-bottom: 32px; /*adds thickness to the bottom margin*/
+    color: #ffffff; /*sets text color white*/
 }
 
+/*class selector that styles the selected <h3> tags within the parent class selector*/
 .benefits h3 {
-    margin-bottom: 10px;
-    text-align: center;
+    margin-bottom: 10px; /*adds thickness to the bottom margin*/
+    text-align: center; /*aligns text in the center*/
 }
 
+/*class selector that styles the selected images within the parent class selector*/
 .benefits img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+    display: block; /*makes sure the images use the whole width and start on a new line*/
+    margin: 10px auto; /*sets margin all around the image*/
+    max-width: 150px; /*sets the maximum width of the image*/
 }
 
+/*Element selector for <footer>*/
 footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+    padding: 30px; /*set value to the padding from the bottom of the webpage*/
+    clear: both; /*neither side of the footer can have a floating element*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*sets font types*/
+    text-align: center; /*aligns text in the center*/
 }
 
+/*styles the <h2> element within the footer element */
 footer h2 {
-    font-size: 20px;
+    font-size: 20px; /*font size of the footer header*/
 }

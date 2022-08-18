@@ -1,94 +1,104 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!DOCTYPE html> <!--Type of document is HTML-->
+<html lang="en-us"> <!--Specifies the language which is English-->
 
-<head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!--Below is the title of the webpage-->
-    <title>Horiseon, Inc.</title>
+<head> <!--container for metadata of the page-->
+    <meta charset="UTF-8" /> <!--Specifies character set which is UTF-8-->
+    <link rel="stylesheet" href="./assets/css/style.css"> <!--Link to the CSS styelsheet-->
+    <title>Horiseon, Inc.</title> <!--The title of the webpage-->
 </head>
 
+<!--Body of the webpage-->
 <body>
     <!--This section is the header of the webpage so 'header' element is used-->
     <header>
-        <h1>Hori<span class="seo">seo</span>n</h1>
-        <!--Replaced 'div' with 'nav'-->
-        <nav>
-             <ul>
-                <li>
-                    <a href="#search-engine-optimization">Search Engine Optimization</a>
+        <h1>Hori<span class="seo">seo</span>n</h1> <!--Class selector is used here to style the 'seo' in 'Horiseon'-->
+        <nav> <!--'nav' element to indicate navigation bar-->
+             <ul> <!--tag for unordered list-->
+                <li> <!--tag for list-->
+                    <a href="#search-engine-optimization">Search Engine Optimization</a> 
+                    <!--# indicaates ID attribute. Links to Search Engine Optimization section of the webpage using the ID attribute-->
                 </li>
                 <li>
-                    <a href="#online-reputation-management">Online Reputation Management</a>
+                    <a href="#online-reputation-management">Online Reputation Management</a> 
+                    <!--# indicates ID attribute. Links to Online Reputation Management section of the webpage using the ID attribute-->
                 </li>
                 <li>
                     <a href="#social-media-marketing">Social Media Marketing</a>
+                    <!-- # indicates ID attribute. Links to Social Media Marketing section of the webpage using the ID attribute-->
                 </li>
             </ul>
         </nav>
     </header>
 
-    <!--Replaced 'div' with 'section' and added a title attribute to alt tag the background image-->
-    <section 
-    class="hero" title="a group of 4 people, 3 men and 1 woman, gathered at a table having a work meeting">
-    </section>
+    <figure title="a group of 4 people, 3 men and 1 woman, gathered at a table having a work meeting">
+    <!--Figure element used since this section is just a self-contained banner image. The title attribute alt-tags the image.-->
+    </figure>
 
-    <!--Replaced 'div' with 'main'-->
+    <!--'main' element used to indicate main content of the page -->
     <main>
-        <!--Replaced 'div' with 'section' and alt tagged all images as well as fixed the broken link for 'search engine optimization'
-        by adding the missing id selector-->
-        <section id="search-engine-optimization" class="digital-marketing">
-           <img src="./assets/images/search-engine-optimization.jpg" alt="a spiral notebook in the center of a table along with a cup of colored pencils in the top right corner, and on the left is a laptop with a magnifying glass and cup of coffee. The notebok is describing seo with illustrations." class="float-left" />
-            <h2>Search Engine Optimization</h2>
-            <p>
-                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
-            </p>
+        <!--ID attribute in this section creates the link landing from navigation. The one below was missing the id attribute so the link to this section was broken-->
+        <section id="search-engine-optimization" class="digital-marketing"> <!--The class selector for the sections within main. It effects all style elements wihin that class. 
+            In this case, the image and header.-->
+            <!--Below links the image from the assets folder and the 'alt' attribute is to al tag the image-->
+           <img src="./assets/images/search-engine-optimization.jpg" alt="a spiral notebook in the center of a table along with a cup of colored pencils in the top right corner, 
+                and on the left is a laptop with a magnifying glass and cup of coffee. The notebok is describing seo with illustrations." class="float-left" /> <!--this styles the image to the left-->
+            <h2>Search Engine Optimization</h2> <!--heading tag for Header 2-->
+            <p> <!--This is a paragraph-->
+                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. 
+                Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+            </p> <!--This is a paragraph-->
         </section>
-        <section id="online-reputation-management" class="digital-marketing">
+        <!--ID attribute in this section creates the link landing from navigation.-->
+        <section id="online-reputation-management" class="digital-marketing"> <!--The class selector for the sections within main. It effects all style elements wihin that class. 
+            In this case, the image and header.-->
+            <!--Below links the image from the assets folder and the 'alt' attribute is to al tag the image-->
             <img src="./assets/images/online-reputation-management.jpg" alt="person holding cell phone in front of a laptop in which the screen shows a flowchart labeled 'reputation'" class="float-right" />
-            <h2>Online Reputation Management</h2>
-            <p>
-                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
-            </p>
+            <h2>Online Reputation Management</h2> <!--heading tag for Header 2-->
+            <p> <!--This is a paragraph-->
+                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. 
+                Online Reputation Management gives you the control over what potential customers see when they search for your business.
+            </p> <!--This is a paragraph-->
         </section>
-        <section id="social-media-marketing" class="digital-marketing">
+        <section id="social-media-marketing" class="digital-marketing"> <!--The class selector for the sections within main. It effects all style elements wihin that class. 
+            In this case, the image and header.-->
+            <!--Below links the image from the assets folder and the 'alt' attribute is to al tag the image-->
             <img src="./assets/images/social-media-marketing.jpg" alt="aerial view of a table during a meeting; the table is filled with various colorful clip art, speech bubbles and icons" class="float-left" />
-            <h2>Social Media Marketing</h2>
-            <p>
+            <h2>Social Media Marketing</h2> <!--heading tag for Header 2-->
+            <p> <!--This is a paragraph-->
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
-            </p>
+            </p> <!--This is a paragraph-->
         </section>
     </main>
 
-    <!--Replaced 'div' with 'article'-->
+    <!--Article element for self-contained content on the right side of the webpage-->
     <article>
-        <!--Replaced all below 'divs' with 'section' and alt tagged all images-->
-        <section class="benefits">
-            <h3>Lead Generation</h3>
-            <img src="./assets/images/lead-generation.png" alt="symbol representing lead generation"/>
-            <p>
+        <section class="benefits"> <!--class selector for all the sections within article. Effects the style elements of headers and images-->
+            <h3>Lead Generation</h3> <!--heading tag for Header 3-->
+            <img src="./assets/images/lead-generation.png" alt="symbol representing lead generation"/> <!--link to image from the assets folder and the alt tag of that image-->
+            <p> <!--this is a paragraph-->
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
-            </p>
+            </p> <!--this is a paragraph-->
         </section>
-        <section class="benefits">
-            <h3>Brand Awareness</h3>
-            <img src="./assets/images/brand-awareness.png" alt="symbol representing brand awareness"/>
-            <p>
+        <section class="benefits"> <!--class selector for all the sections within article. Effects the style elements of headers and images-->
+            <h3>Brand Awareness</h3> <!--heading tag for Header 3-->
+            <img src="./assets/images/brand-awareness.png" alt="symbol representing brand awareness"/> <!--link to image from the assets folder and the alt tag of that image-->
+            <p><!--this is a paragraph-->
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
-            </p>
+            </p> <!--this is a paragraph-->
         </section>
-        <section class="benefits">
-            <h3>Cost Management</h3>
-            <img src="./assets/images/cost-management.png" alt="symbol representing cost management"/>
-              <p> As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
-            </p>
+        <section class="benefits"> <!--class selector for all the sections within article. Effects the style elements of headers and images-->
+            <h3>Cost Management</h3> <!--heading tag for Header 3-->
+            <img src="./assets/images/cost-management.png" alt="symbol representing cost management"/> <!--link to image from the assets folder and the alt tag of that image-->
+              <p> <!--this is a paragraph-->
+                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
+            </p> <!--this is a paragraph-->
         </section>
     </article>
     
-    <!--Replaced 'div' with 'footer'-->
+    <!--Footer element for footer section of the webpage.-->
     <footer>
-        <h2>Made with ❤️️ by Horiseon</h2>
-        <p>
+        <h2>Made with ❤️️ by Horiseon</h2> <!--h2 is the heading tag for Header 2-->
+        <p> <!--this is a paragraph-->
             &copy; 2019 Horiseon Social Solution Services, Inc.
         </p>
     </footer>
