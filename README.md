@@ -31,7 +31,7 @@ HTML and CSS in VS Code
 
 ## Usage
 
-![Screenshot of deployed Horiseon website](./develop/assets/images/Screen%20Shot%202022-08-18%20at%206.13.19%20AM.png)
+![Screenshot of deployed Horiseon website](./assets/images/Screen%20Shot%202022-08-18%20at%206.13.19%20AM.png)
 
 
 ![View Webite Here] (https://marchocobar.github.io/Horiseon-Accessibility/)
